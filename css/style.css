@@ -43,31 +43,36 @@
     padding-left: 10px;
 }
     /* main-top */
-    .top{
-        padding-top: 2.5rem;
-        padding-bottom: 4rem;
-    }
-    .row .col{
-        width: 85%;
-        margin: 20px auto;
-        text-align: center;
-    }
-
-    .row .p{
-        text-align: left;
-    }
-
+.column{
+    width: 85%;
+    margin: 20px auto; 
+}
+.column .row{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    margin: 10px auto;
+    padding: 20px;
+}
+.pic{
+    margin: 0 auto;
+    height: 200px;
+    width: 80%;
+    background-color: brown;
+}
 /* media */
 @media screen and (min-width: 768px) { 
     .navbar{
         width: 100%;
     }
 
-    .big .col{
-        width: 40%;
+    .big{
+        width: 60%;
     }
-    .med .col{
-        width:20%;
+    .med{
+        width:30%;
+        height: 300px;
     }
 
 
