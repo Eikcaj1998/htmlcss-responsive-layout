@@ -8,11 +8,11 @@
 .white{color: white;}
 /* border */
 .b-radius-20{border-radius:20px ; }
-.b-radius-50{border-radius: 50%;}
 /* padding */
 .pd{padding: 20px;}
 /* margin */
 .mg{margin: 20px;}
+.ml-20{margin-left: 20px;}
 /* reset */
 *{
     margin: 0;
@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 /* common */
-.flex{display: flex;}
+.d-flex{display: flex;}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -56,10 +56,36 @@
     padding: 20px;
 }
 .pic{
-    margin: 0 auto;
+    margin: 20px auto;
     height: 200px;
     width: 80%;
     background-color: brown;
+    padding: 20px;
+}
+/* primo container viola */
+main .bg-purple{
+    padding: 20px 0;
+}
+.bg-white{
+    height: 300px;
+}
+.bg-purple .row{
+    flex-direction: column;
+}
+/* foto profilo */
+
+.bg-white .row{
+    margin: 0 auto;
+}
+.photo{
+    background-color: aqua;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+}
+.bg-purple p{
+    text-align: center;
 }
 /* media */
 @media screen and (min-width: 768px) { 
@@ -74,12 +100,29 @@
         width:30%;
         height: 300px;
     }
-
-
+    .badge{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+    }
+    .photo{
+        margin: 20px;
+    }
+    
+        
 }
 @media screen and (min-width: 992px) { 
     .navbar{
         width: 100%;
     }
     .menu i{display: none;}
+    .bg-purple .row{
+        flex-direction: row;
+    }
+    .col-1{
+        flex-basis: 50%;
+    }
+    .col-2{
+        flex-basis: 50%;
+    }
 }
