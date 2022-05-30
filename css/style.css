@@ -13,43 +13,68 @@
 .pd{padding: 20px;}
 /* margin */
 .mg{margin: 20px;}
+/* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;  
 }
-header{
-    position: fixed;
-    width: 1200px;
+/* common */
+.flex{display: flex;}
+.container{
+    max-width: 1200px;
     margin: 0 auto;
 }
-.navbar{
-    width: 480px;
-    display: flex;
+ .big{
+     height: 300px;
+ }
+ .med{height:150px ;}
+/* header */
+.navbar .container{
     justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
-
 .menu ul{
     list-style-type: none;
     display: none;
 }
+.menu li{
+    padding-left: 10px;
+}
+    /* main-top */
+    .top{
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+    .row .col{
+        width: 85%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .row .p{
+        text-align: left;
+    }
+
+/* media */
 @media screen and (min-width: 768px) { 
     .navbar{
         width: 100%;
     }
-    .menu ul{
-        display: flex;
+
+    .big .col{
+        width: 40%;
     }
+    .med .col{
+        width:20%;
+    }
+
+
 }
 @media screen and (min-width: 992px) { 
     .navbar{
         width: 100%;
     }
-    .menu ul{
-        display: flex;
-    }
-    .menu i{
-        display: none;
-    }
+    .menu i{display: none;}
 }
