@@ -1,11 +1,17 @@
-/*bg color */
-.bg-purple{background-color:  #9792E4;}
-.bg-white{background-color: white;}
-.bg-black{background-color: black;}
-.bg-blue{background-color: #0084FD;}
-.bg-azzure{background-color: #B5DDFF;}
-/* txt-color */
-.white{color: white;}
+/*palette*/
+:root{
+    /* background-color */
+    --color-first:#0084FD;
+    --color-second:#9792E4;
+    --color-third:white;
+    --color-forth:black;
+    --color-fifth:#B5DDFF;
+    /* colore testo */
+    --text-color-first:white;
+    --text-color-second:#0084FD;
+    --text-color-third:#9792E4;
+    --text-color-forth:black;
+}
 /* border */
 .b-radius-20{border-radius:20px ; }
 /* padding */
