@@ -12,60 +12,48 @@
     --text-color-third:#9792E4;
     --text-color-forth:black;
 }
-/* border */
-.b-radius-20{border-radius:20px ; }
 /* padding */
 .pd-vert{ padding-left: 2rem;
     padding-right: 2rem;}
-/* margin */
-.mg{margin: 20px;}
-.ml-20{margin-left: 20px;}
-/* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin */
+    .mg{margin: 20px;}
+    .ml-20{margin-left: 20px;}
+    /* reset */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* common */
+body{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 80px;
 }
-/* common */
-.d-flex{display: flex;}
+ .d-flex{display: flex;}
 a {
     text-decoration: none;
     color: inherit;
 }
 .container{
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
 }
- .big{
-     height: 300px;
- }
- .med{height:150px ;}
  .btn {
     font-size: 1.2rem;
     font-weight: 700;
     padding: 8px 60px;
     border-radius: 50px;
-
 }
-.btn.purple {
-    color: white;
-    background-color: #9792e4;
+img{
+    width: 100%;
 }
 
-.btn.white {
-    background-color: white;
-    color: #9792e4;
-}
-body{
-    font-family: 'PT Sans', sans-serif;
-    padding-top: 80px;
-}
 /* header */
 
 .navbar {
     color: white;
     height: 80px;
-    background-color: #0084fd;
+    background-color:var(--color-first);
     position: fixed;
     top: 0;
     left: 0;
@@ -88,39 +76,89 @@ ul{list-style-type: none;}
     padding-right: 2rem;
 }
 .menu .btn{
-    background-color: white;
-    color: black;
+    background-color: var(--color-third);
+    color: var(--text-color-forth);
     font-size: 1rem;
     padding: 7px 15px;
+    font-weight: 400;
 }
-    /* main-top */
-.column{
-    width: 85%;
-    margin: 20px auto; 
+/* main-top */
+.top{
+     padding:3rem 2rem;
 }
-.column .row{
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row .col{
+    margin-bottom:2rem;
 }
-.col{
-    margin: 10px auto;
-    padding: 20px;
+.col .card{
+    background-color: var(--color-fifth);
+    border-radius: 20px;
+    padding:2rem;
+    
 }
-.pic{
-    margin: 20px auto;
-    height: 200px;
-    width: 80%;
-    background-color: brown;
-    padding: 20px;
+.w-66 .card{
+    padding-bottom: 0;
 }
-/* primo container viola */
-main .bg-purple{
-    padding: 20px 0;
+.w-33 .card{
+    text-align: center;
+
 }
 
-.bg-purple .row{
-    flex-direction: column;
+.col h3{
+    color: var(--text-color-second);
+    padding-bottom: 1.5rem;
+    font-size: 1.rem;
 }
+.col-img img{
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 3rem;
+}
+.top .button {
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.top .btn{
+    background-color: var(--color-first);
+    color: var(--text-color-first);
+}
+.w-33 i{
+    color: var(--text-color-second);
+    font-size: 80px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* strategic-planning */
+.strategic-planning{
+    background-color: var(--color-second);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.strategic-planning img{
+    padding-bottom: 2rem;
+}
+.col-1{
+    color: var(--text-color-first);
+}
+.bg-txt h2,.bg-txt p,.app-dev h2,.app-dev p{
+    padding-bottom: 2rem;
+}
+.app-dev{
+    background-color: var(--color-third);
+    border-radius: 45px;
+    text-align: center;
+    padding: 2rem;
+}
+.app-dev .button a {
+    background-color: var(--color-second);
+    padding: 0.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 12px;
+}   
 /* foto profilo */
 
 .bg-white .row{
@@ -162,28 +200,34 @@ main .bg-purple{
 .about-us h2{
     color: #9792E4;
 }
-.col
-.col-img{
-    background-color: #0084FD;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
+
 /* media tablet*/
 @media screen and (min-width: 768px) { 
+    .container{max-width: 740px;}
     /* header */
-    .navbar{
+    .navbar,.strategic-planning{
         width: 100%;
     }
-
-    .big{
-        width: 60%;
+    /* top-main */
+    .top .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -2rem;
     }
-    .med{
-        width:30%;
-        height: 300px;
+    .row .col{
+        padding: 0 1rem;
     }
+    .w-66{
+    width: calc(100% / 3 * 2);
+    }
+    .w-33{
+    width: calc(100% / 3);
+    }
+    .col-img img{
+        width: 50%;
+        padding-top: 3rem;
+    }
+    
     .benefit .row
     {
         display: flex;
@@ -201,6 +245,8 @@ main .bg-purple{
 }
 /* media desktop */
 @media screen and (min-width: 992px) { 
+    .container{max-width: 970px;}
+    /* header */
     .navbar{
         width: 100%;
     }
@@ -210,16 +256,23 @@ main .bg-purple{
     .menu-humburger {
         display: none;
     }
-    .bg-purple .row{
-        flex-direction: row;
+
+  /* strategic-planning */
+    .container{
+        display: flex;
+        justify-content: space-between; 
     }
-    .col-1{
-        flex-basis: 50%;
+    .strategic-planning{
+        padding-top: 6rem;
+    }
+    .col-1,.col-2{
+        padding: 2rem;
+        width: calc(100% / 2);
     }
     .col-2{
-        flex-basis: 50%;
+        align-self: flex-end;
     }
-    .benefit .col{
-        width: calc(100% / 3);
+    .app-dev img{
+        width: 50%;
     }
 }
