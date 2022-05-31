@@ -1,18 +1,22 @@
-/*palette*/
+/****************************************
+palette*/
 :root{
-    /* background-color */
+/* 
+background-color */
     --color-first:#0084FD;
     --color-second:#9792E4;
     --color-third:white;
     --color-forth:black;
     --color-fifth:#B5DDFF;
-    /* colore testo */
+/* ***************************************
+colore testo */
     --text-color-first:white;
     --text-color-second:#0084FD;
     --text-color-third:#9792E4;
     --text-color-forth:black;
 }
-/* padding */
+/**************************************** 
+padding */
 .pd-vert{ padding-left: 2rem;
     padding-right: 2rem;}
     /* margin */
@@ -24,7 +28,8 @@
         padding: 0;
         box-sizing: border-box;
     }
-    /* common */
+/****************************************
+     common */
 body{
     font-family: 'PT Sans', sans-serif;
     padding-top: 80px;
@@ -49,7 +54,8 @@ a {
 img{
     width: 100%;
 }
-/* header */
+/**************************************** 
+header */
 
 .navbar {
     color: white;
@@ -83,7 +89,8 @@ ul{list-style-type: none;}
     padding: 7px 15px;
     font-weight: 400;
 }
-/* main-top */
+/**************************************** 
+main-top */
 .top{
      padding:3rem 2rem;
 }
@@ -130,7 +137,8 @@ ul{list-style-type: none;}
 }
 
 
-/* strategic-planning */
+/**************************************** 
+strategic-planning */
 .strategic-planning{
     background-color: var(--color-second);
     padding-bottom: 4rem;
@@ -163,7 +171,8 @@ ul{list-style-type: none;}
     display: inline-block;
     line-height: 12px;
 }   
-/* foto profilo */
+/***************************************
+ foto profilo */
 .testimonial{
     padding-top: 2rem ;
 }
@@ -180,6 +189,7 @@ ul{list-style-type: none;}
     margin: 0 auto;
     padding-bottom: 40px;
 }
+.badge{padding-bottom: 2rem;}
 .card-purple{
     display: flex;
     flex-wrap: wrap;
@@ -188,6 +198,7 @@ ul{list-style-type: none;}
     text-align: center;
     justify-content: center;
     margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 .icon{
     border-radius: 50%;
@@ -207,23 +218,52 @@ ul{list-style-type: none;}
     color: var(--text-color-first);
     padding-bottom: 2rem ;
 }
-/* benefit */
+/**************************************** 
+benefit */
 .benefit{
-    padding-top: 100px;
-}
-.benefit h2{
-    color: white;
-    padding-bottom: 40px;
-    
+    padding-top: 4rem;
+    background-color: var(--color-second);
+    padding-bottom: 2rem;
 }
 
-.benefit .col{
-    width: 50%;
-    color: #9792E4;
-    border-radius:20px ;
-    height: 100px;
+.benefit h2{
+    color: var(--text-color-first);
+    padding-bottom:2rem;
+    text-align: center;
 }
-/* About us */
+.benefit.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefit .col{
+    color:var(--text-color-third);
+    border-radius:20px ;
+    background-color: var(--color-third);
+    padding: 2rem;
+}
+.benefit h3{
+    padding-top: 2rem;
+    font-size: 3rem;
+    color:var(--text-color-third)
+}
+.benefit h4{
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color:var(--text-color-third)
+}
+.benefit p{
+    padding-bottom: 2rem;
+
+    color:var(--text-color-forth)
+}
+
+.benefit .btn{
+   color: var(--text-color-first);
+   background-color: var(--color-second);
+   padding: 8px 45px;
+}
+/**************************************** 
+About us */
 .about-us{
     margin:40px;
     text-align: center;
@@ -233,14 +273,18 @@ ul{list-style-type: none;}
     color: #9792E4;
 }
 
-/* media tablet*/
+/****************************************
+*************************************** 
+media tablet*/
 @media screen and (min-width: 768px) { 
     .container{max-width: 740px;}
-    /* header */
+    /**************************************** 
+    header */
     .navbar,.strategic-planning{
         width: 100%;
     }
-    /* top-main */
+    /**************************************** 
+    top-main */
     .top .row{
         display: flex;
         flex-wrap: wrap;
@@ -259,7 +303,8 @@ ul{list-style-type: none;}
         width: 50%;
         padding-top: 3rem;
     }
-    /* foto profilo */
+    /****************************************
+     foto profilo */
     
     .benefit .row
     {
@@ -287,11 +332,25 @@ ul{list-style-type: none;}
      .icon{
         margin-right: 2rem; 
      }
+     /* ***************************************
+     benefit */
+     .benefit .row{
+
+         justify-content: space-between;
+     }
+     .benefit .row .w-50{
+        padding: 2rem;
+        width: calc(100% / 2 - 2rem);
+        margin: 1rem;
+     }
 }
-/* media desktop */
+/* ***************************************
+***************************************
+media desktop */
 @media screen and (min-width: 992px) { 
     .container{max-width: 970px;}
-    /* header */
+    /****************************************
+     header */
     .navbar{
         width: 100%;
     }
@@ -302,7 +361,8 @@ ul{list-style-type: none;}
         display: none;
     }
 
-  /* strategic-planning */
+  /* ***************************************
+  strategic-planning */
     .strategic-planning .container{
         display: flex;
         justify-content: space-between; 
@@ -310,7 +370,7 @@ ul{list-style-type: none;}
     .strategic-planning{
         padding-top: 6rem;
     }
-    .col-1,.col-2{
+    .w-50{
         padding: 2rem;
         width: calc(100% / 2);
     }
@@ -320,8 +380,16 @@ ul{list-style-type: none;}
     .app-dev img{
         width: 50%;
     }
-    /* foto profilo */
+    /**************************************** 
+    foto profilo */
     .icon{
         margin-right: 4rem; 
+     }
+     /* ***************************************
+     benefit */
+     .benefit .row .w-33{
+        padding: 2rem;
+        width: calc(100% / 3 - 2rem);
+        margin: 1rem;
      }
 }
