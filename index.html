@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' crossorigin='anonymous'/>
     <title>Document</title>
@@ -11,19 +14,33 @@
 <body>
     <!-- header -->
     <header>
-        <div class="navbar bg-blue white pd">
+        <div class="navbar bg-blue white pd-vert">
             <div class="container d-flex">
 
-                <div class="logo"><h2>Logo</h2></div>
-
+                <div class="logo">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="menu-humburger">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
                 <div class="menu">   
-                    <i class="fa-solid fa-bars"></i>
                     <ul class="d-flex">
-                        <li>Planning</li>
-                        <li>Testimonials</li>
-                        <li>Features</li>
-                        <li>About Us</li>
-                        <li> Get Started</li>
+                        <li>
+                            <a href="#">Planning</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+
+                        <div class="button">
+                            <a class="btn" href="#"> Get Started</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -82,25 +99,24 @@
     <div class="container bg-white pd ">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum, modi, facilis dicta hic iste quas placeat id architecto fugit obcaecati iusto quam non necessitatibus ipsa consectetur? Molestias, praesentium illum?
-
         </p>
         <!-- foto profilo -->
         <div class="row flex">
             
 
-                <div class="badge bg-purple b-radius-20">
+                <div class="col bg-purple b-radius-20">
                     <div class="photo"></div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam laudantium, eaque iusto tempore, excepturi beatae ex fuga ducimus labore odio perferendis architecto. Cumque cupiditate suscipit nostrum dolorum. Laborum, quia.
                     </p>
                 </div>           
-                <div class="badge bg-purple b-radius-20">
+                <div class="col bg-purple b-radius-20">
                     <div class="photo"></div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam laudantium, eaque iusto tempore, excepturi beatae ex fuga ducimus labore odio perferendis architecto. Cumque cupiditate suscipit nostrum dolorum. Laborum, quia.
                     </p>
                 </div>            
-                <div class="badge bg-purple b-radius-20">
+                <div class="col bg-purple b-radius-20">
                     <div class="photo"></div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam laudantium, eaque iusto tempore, excepturi beatae ex fuga ducimus labore odio perferendis architecto. Cumque cupiditate suscipit nostrum dolorum. Laborum, quia.
@@ -108,6 +124,28 @@
                 </div>
         </div>
     </div>
+      <div class="benefit bg-purple">
+        <h2>Benefits of working with us</h2>
+        <div class="row">
+            <div class="col bg-white">1</div>
+            <div class="col bg-white">2</div>
+            <div class="col bg-white">3</div>
+            <div class="col bg-white">4</div>
+            <div class="col bg-white">5</div>
+            <div class="col bg-white">6</div>
+        </div>
+      </div>
+      <div class="about-us bg-white">
+          <div class="row ">
+              <div class="col-txt">
+                  <h2>About us</h2>
+                  <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur reiciendis necessitatibus distinctio. Ducimus minus nisi dignissimos, accusamus asperiores culpa aperiam modi doloribus blanditiis! Voluptates laborum amet quo eos, odit recusandae!
+                  </p>
+              </div>
+              <div class="col-img"></div>
+          </div>
+      </div>
     </main>
 </body>
 </html>

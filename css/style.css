@@ -9,7 +9,8 @@
 /* border */
 .b-radius-20{border-radius:20px ; }
 /* padding */
-.pd{padding: 20px;}
+.pd-vert{ padding-left: 2rem;
+    padding-right: 2rem;}
 /* margin */
 .mg{margin: 20px;}
 .ml-20{margin-left: 20px;}
@@ -21,6 +22,10 @@
 }
 /* common */
 .d-flex{display: flex;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -29,18 +34,58 @@
      height: 300px;
  }
  .med{height:150px ;}
+ .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px 60px;
+    border-radius: 50px;
+
+}
+.btn.purple {
+    color: white;
+    background-color: #9792e4;
+}
+
+.btn.white {
+    background-color: white;
+    color: #9792e4;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 80px;
+}
 /* header */
+
+.navbar {
+    color: white;
+    height: 80px;
+    background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .navbar .container{
     justify-content: space-between;
     height: 100%;
     align-items: center;
+
 }
-.menu ul{
-    list-style-type: none;
+ul{list-style-type: none;}
+.menu{   
     display: none;
 }
+.menu-humburger a{
+    font-size: 1.5rem;
+}
 .menu li{
-    padding-left: 10px;
+    padding-right: 2rem;
+}
+.menu .btn{
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    padding: 7px 15px;
 }
     /* main-top */
 .column{
@@ -66,9 +111,7 @@
 main .bg-purple{
     padding: 20px 0;
 }
-.bg-white{
-    height: 300px;
-}
+
 .bg-purple .row{
     flex-direction: column;
 }
@@ -76,6 +119,7 @@ main .bg-purple{
 
 .bg-white .row{
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 .photo{
     background-color: aqua;
@@ -87,8 +131,42 @@ main .bg-purple{
 .bg-purple p{
     text-align: center;
 }
-/* media */
+/* benefit */
+.benefit{
+    padding-top: 100px;
+}
+.benefit h2{
+    color: white;
+    padding-bottom: 40px;
+    
+}
+
+.benefit .col{
+    width: 50%;
+    color: #9792E4;
+    border-radius:20px ;
+    height: 100px;
+}
+/* About us */
+.about-us{
+    margin:40px;
+    text-align: center;
+    justify-content: center;
+}
+.about-us h2{
+    color: #9792E4;
+}
+.col
+.col-img{
+    background-color: #0084FD;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+/* media tablet*/
 @media screen and (min-width: 768px) { 
+    /* header */
     .navbar{
         width: 100%;
     }
@@ -100,22 +178,32 @@ main .bg-purple{
         width:30%;
         height: 300px;
     }
-    .badge{
-        width: 100%;
+    .benefit .row
+    {
         display: flex;
-        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
     }
-    .photo{
-        margin: 20px;
+    .benefits-columns .col{
+        width: calc(100% / 2);
     }
-    
+    .about-us .row{
+        display: flex;
+    }
         
 }
+/* media desktop */
 @media screen and (min-width: 992px) { 
     .navbar{
         width: 100%;
     }
-    .menu i{display: none;}
+    .menu{
+        display: block;
+    }
+    .menu-humburger {
+        display: none;
+    }
     .bg-purple .row{
         flex-direction: row;
     }
@@ -124,5 +212,8 @@ main .bg-purple{
     }
     .col-2{
         flex-basis: 50%;
+    }
+    .benefit .col{
+        width: calc(100% / 3);
     }
 }
